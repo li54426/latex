@@ -554,15 +554,43 @@ KL
 \rho \parallel hat{\rho}_j
 )
 \]
+where $ J(W,b)$ is as defined previously, and $\beta$ controls the weight of the sparsity penalty term. The term $\hat{\rho} _j$ (implicitly) depends on $W,b$ also, because it is the average activation of hidden unit $j$, and the activation of a hidden unit depends on the parameters $W,b$.
+To incorporate the KL-divergence term into your derivative calculation, there is a simple-to-implement trick involving only a small change to your code. Specifically, where previously for the second layer ($l=2$), during backpropagation you would have computed
+\[
+\delta^{(2)}_i = 
+\left( \sum_{j=1}^{s_{2}} W^{(2)}_{ji} \delta^{(3)}_j \right) f'(z^{(2)}_i)
+\]
+now instead compute
+\[
+\delta^{(2)}_i =
+  \left( \left( \sum_{j=1}^{s_{2}} W^{(2)}_{ji} \delta^{(3)}_j \right)
++ \beta \left( - \frac{\rho}{\hat\rho_i} + \frac{1-\rho}{1-\hat\rho_i} \right) \right) f'(z^{(2)}_i)
+\]
+One subtlety is that you'll need to know $\hat{\rho}_i$ to compute this term. Thus, you'll need to compute a forward pass on all the training examples first to compute the average activations on the training set, before computing backpropagation on any example. If your training set is small enough to fit comfortably in computer memory (this will be the case for the programming assignment), you can compute forward passes on all your examples and keep the resulting activations in memory and compute the $\hat{\rho}_i$s. Then you can use your precomputed activations to perform backpropagation on all your examples. If your data is too large to fit in memory, you may have to scan through your examples computing a forward pass on each to accumulate (sum up) the activations and compute $\hat{\rho}_i$ (discarding the result of each forward pass after you have taken its activations $a^{(2)}_i$ into account for computing $\hat{\rho}_i$). Then after having computed $\hat{\rho}_i$, you'd have to redo the forward pass for each example so that you can do backpropagation on that example. In this latter case, you would end up computing a forward pass twice on each example in your training set, making it computationally less efficient.
+The full derivation showing that the algorithm above results in gradient descent is beyond the scope of these notes. But if you implement the autoencoder using backpropagation modified this way, you will be performing gradient descent exactly on the objective $J_{sparse}(W,b)$. Using the derivative checking method, you will be able to verify this for yourself as well.
 
-%continue
 \hfill mds
 
 \hfill August 26, 2015
 
-\subsection{Subsection Heading Here}
+\subsection{Visualizing a Trained Autoencoder}
 Subsection text here.
+Having trained a (sparse) autoencoder, we would now like to visualize the function learned by the algorithm, to try to understand what it has learned. Consider the case of training an autoencoder on $10\times10$ images, so that $n=100$. Each hidden unit i computes a function of the input:
+\[
+a^{(2)}_i = f\left(\sum_{j=1}^{100} W^{(1)}_{ij} x_j  + b^{(1)}_i \right)
+\]
+We will visualize the function computed by hidden unit $i$-which depends on the parameters $W^{(1)} _{ij}$(ignoring the bias term for now)-using a 2D image. In particular, we think of $a^{(2)} _i$ as some non-linear feature of the input $x$. We ask: What input image $x$ would cause $a^{(2)} _i$ to be maximally activated? (Less formally, what is the feature that hidden unit $i$ is looking for?) For this question to have a non-trivial answer, we must impose some constraints on $x$. If we suppose that the input is norm constrained by $||x||^2 = \sum_{i=1}^{100} x_i^2 \leq 1$, then one can show (try doing this yourself) that the input which maximally activates hidden unit i is given by setting pixel $x_j$ (for all 100 pixels, $j=1,…,100$) to
+\[
+x_j = \frac{W^{(1)}_{ij}}{\sqrt{\sum_{j=1}^{100} (W^{(1)}_{ij})^2}}
+\]
+By displaying the image formed by these pixel intensity values, we can begin to understand what feature hidden unit $i$ is looking for.
+If we have an autoencoder with 100 hidden units (say), then we our visualization will have 100 such images—one per hidden unit. By examining these 100 images, we can try to understand what the ensemble of hidden units is learning.
+When we do this for a sparse autoencoder (trained with 100 hidden units on 10 $\times$ 10 pixel inputs{^1} we get the following result:
+%the picture is here huise
 
+Each square in the figure above shows the (norm bounded) input image $x$ that maximally actives one of 100 hidden units. We see that the different hidden units have learned to detect edges at different positions and orientations in the image.
+These features are, not surprisingly, useful for such tasks as object recognition and other vision tasks. When applied to other input domains (such as audio), this algorithm also learns useful representations/features for those domains too.
+%continue
 % needed in second column of first page if using \IEEEpubid
 %\IEEEpubidadjcol
 
