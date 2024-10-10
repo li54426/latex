@@ -1,0 +1,5 @@
+[1]Cisco Annual Internet Report (2018–2023) White Paper. [R], 2020
+[2]Pierre G , Steen M V .globule: a collaborative content delivery network [J]. 2017.DOI:10.1109/mcom.2006.1678120.
+[3]Kirkpatrick K. Software-defined networking[J]. Communications of the ACM, 2013, 56(9): 16-19.
+[4]Raychaudhuri D, Nagaraja K, Venkataramani A. Mobilityfirst: a robust and trustworthy mobility-centric architecture for the future internet[J]. ACM SIGMOBILE Mobile Computing and Communications Review, 2012, 16(3): 2-13.
+[5]Jacobson V, Smetters D K, Thornton J D, et al. Networking named content[C]. Proceedings of the 5th international conference on Emerging networking experiments and technologies. 2009: 1-12.

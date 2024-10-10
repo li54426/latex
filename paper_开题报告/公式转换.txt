@@ -1,0 +1,129 @@
+\[
+	C_{it} = M_{it}   \cdot \Delta T 
+	- r_{it}
+	\label{cm}
+\]
+
+\[
+	M_{it} = v_i \cdot f_{it} + \theta_i
+	\label{mf}
+\]
+
+
+\[
+	C_{it} = (v_i \cdot f_{it} + \theta_i)   \times \Delta T 
+	- r_{it}
+	\label{cf}
+\]
+
+
+
+\[
+E=\lambda_{i} \cdot f_{it}^{3} \cdot \Delta T
+\]
+
+
+
+\[
+	E_{i}^{save}
+	=( \lambda_{i} \cdot f_{it}^{3} -
+	\lambda_{i} \cdot{f^{\prime}}_{i}^{3} ) \times \Delta T
+	, 
+	\forall i \in R
+\]
+
+
+
+\[
+	b_{ij} = W\log (1 + \text{SNR})
+\]
+
+
+
+\[
+	E_{i}^{r e c}=\sum_{j =1, j \ne i}^{N} x _{ij}^{t} \cdot P_0 \cdot \frac{d_{jt}}{W\log (1 + \text{SNR})}, 
+	\quad  i = 1, \dots ,N
+\]
+
+
+
+\[
+	E_{i}^{send}=\sum_{i =1, i \ne j}^{N} x _{ij}^{t} \cdot P_0 \cdot \frac{d_{it}}{W\log (1 + SNR)},
+	\quad  j = 1, \dots ,N
+\]
+
+
+
+\[
+	\min\sum \limits _{t=1} ^{T} \sum \limits _{i=1}^{N} (E^{blnc}_{it} )^ 2
+\]
+
+
+
+
+
+\[
+	\min  \quad  &\sum \limits _{t=1} ^{T} \sum \limits _{i=1}^{N} (E^{blnc}_{it} )^ 2  \\
+	\text{s.t.}   \quad   & 	    	E^{blnc} _{it}=
+	\sum \limits_{j=1,  j \ne i}^{N} x _{ij}^{t} \cdot P_0 \cdot \frac{d_{jt}}{W\log (1 + \text{SNR})}  \notag \\
+	&\quad \quad +\sum_{j=1 ,j \ne i }^{N} x _{ji}^{t} \cdot P_0 \cdot \frac{d_{it}}{W\log (1 + \text{SNR})}  \notag \\
+	&\quad  \quad + \lambda_{i} \cdot f_{it}^{3} \cdot \Delta T
+	,\quad i = 1, \dots ,N      \\
+	& \sum    _{ j= 1} ^{N}
+	{ x_{ij}^{t} \cdot  r'_{jt}} \le C_{it}       \label{cons1}   \\
+	& \sum  _{ i= 1} ^N x_{ij}^{t} 	\ge 1  \label{cons2} \\
+	&     	f_{it} \ge 0        
+	&      x_{it}^{t} \in \{0,1\}	 
+\]
+
+
+
+
+\[
+	\min\limits_{ }
+	l_{ij}^{t}<\delta
+	,\quad
+	i = 1,\dots,N,\forall x_{ij}^{t} =1
+\]
+
+
+
+
+\[
+
+\]
+
+
+
+
+\[
+
+\]
+
+
+
+
+\[
+
+\]
+
+
+
+\[
+
+\]
+
+
+
+\[
+
+\]
+
+
+
+\[
+
+\]
+
+
+

@@ -1,0 +1,32 @@
+
+
+\begin{figure}[t]
+    \centering
+    \subfloat[算法运行时间结果图]{
+        \includegraphics[scale=0.5]{img/time.png}
+        \label{time}
+    } 
+    % \quad
+    \subfloat[平衡因子 FC 值结果图]{
+        \includegraphics[scale=0.5]{img/fc_ga.png}
+        \label{fc}
+    }
+    \caption{运行时间及平衡因子 FC 值结果图}
+\end{figure}
+
+转换为以下代码的形式
+
+\begin{figure}
+    \centering
+    \begin{subfigure}{0.49\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{img/e_ga_1.png}
+        \caption{车辆能耗结果1}
+    \end{subfigure}
+    \begin{subfigure}{0.49\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{img/e_ga_2.png}
+        \caption{车辆能耗结果2}
+    \end{subfigure}
+    \caption{能耗图}
+\end{figure}

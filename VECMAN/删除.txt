@@ -1,0 +1,70 @@
+
+The central cloud is responsible for global scheduling, and the tasks it performs include complicated computation and global decision.
+
+Due to vehicular mobility, the edge cloud is composed of two parts: local server and communication site. And the edge cloud only serve nearby vehicles. The edge cloud is the controller of vehicular cloud, and is responsible for creating, maintaining, and deleting the cloud. 
+
+The vehicular cloud consists of vehicles which share their computation resources. Each vehicle can access the edge cloud and convey the information to it. The vehicles can save the energy through offloading task to other vehicles. It can improve the overall resource utilization. %Due to vehicle mobility 
+
+
+	The task offloading process is as follows: first, the real-time traffic information is transmitted to the cloud server for analysis. The real-time information includes destination, current location, time, vehicle speed, and so on. After summarizing the data, the cloud server performs big data analysis to obtain the road congestion, and then infers the location information of the vehicles in a certain time period $T$ in the future, and returns the result to the edge cloud which is near the vehicle. 
+	%The result includes the set of vehicles which are closed to edge server within the range of time $T$, 
+	These vehicles will participate in resource sharing.
+	Then, the edge cloud assigns tasks according to these information and divides the vehicles into providers and requesters, and they share resources at time period $T$.
+
+	In genetic algorithm, a population is composed of randomly generated solutions, and all individuals in the population are composed of encoded strings similar to chromosomes\cite{gaguocheng}.
+	Similar to natural selection, with the iteration, the diversity decreases, but the preserved individuals are excellent adaptive individuals. In other words, the preserved solutions are are locally optimal.
+
+
+
+\begin{algorithm}[t]
+	%设置算法编号
+	%\renewcommand{\thealgocf}{3-1}
+	\SetAlgoLined %显示end
+	\caption{Greedy algorithm}%算法名字
+	\label{greedy1}
+	\KwIn{Vehicular real-time information}%输入参数
+	%\KwOut{$ $}%输出
+	%some description\; 
+	%      '\;'   用于换行
+	\While{true}{
+		Update set of vehicles allocated to a vehicular network \;
+		\For{t =1 to T/$\Delta T$}{
+			\For{each edge server}{
+				Establish vehicular network as controller  \;
+				Run GA($Iterations, M, r', rloc, $) \;
+				Every vehicle take participate in resource sharing according to the allocation matrix \;
+			}
+			
+		}
+		
+		
+	}
+\end{algorithm} 
+
+
+%经典三线表格
+\begin{table}[]
+	\centering
+	\caption{The values of parameters}
+	\begin{tabular}{|c|c|}
+		\hline
+		Parameters    &    Values / Distribution   \\
+		\hline
+		
+		$f_i$	          & $[700, 1900] $     \\
+		$v_i$        &  $7.683$   \\
+		$\theta $    & $-4558.52 $\\
+		$\lambda$    &  $0.00125$ \\
+		
+		$\Delta T$      &   $1$   \\
+		
+		$r_{it}$     &     $ U[820, 10000]$   \\
+		$r'_{it} $  &   $ U[200, r_{it}]$ \\
+		
+		$P_0$      &   $0.2$   \\
+		%	$W\log (1 + \text{SNR}) $      &   $27$   \\
+		$W$ & 10 MHz \\
+		\text{SNR} & 677\\
+		\hline
+	\end{tabular}
+\end{table}

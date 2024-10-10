@@ -1,0 +1,830 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{none/global//global/global}
+  \entry{battery}{article}{}
+    \name{author}{7}{}{%
+      {{hash=CZP}{%
+         family={Cano},
+         familyi={C\bibinitperiod},
+         given={Zachary\bibnamedelima P},
+         giveni={Z\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=BD}{%
+         family={Banham},
+         familyi={B\bibinitperiod},
+         given={Dustin},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=YS}{%
+         family={Ye},
+         familyi={Y\bibinitperiod},
+         given={Siyu},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=HA}{%
+         family={Hintennach},
+         familyi={H\bibinitperiod},
+         given={Andreas},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=LJ}{%
+         family={Lu},
+         familyi={L\bibinitperiod},
+         given={Jun},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=FM}{%
+         family={Fowler},
+         familyi={F\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=CZ}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Zhongwei},
+         giveni={Z\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Nature Publishing Group}%
+    }
+    \strng{namehash}{CZP+1}
+    \strng{fullhash}{CZPBDYSHALJFMCZ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{4}
+    \field{pages}{279\bibrangedash 289}
+    \field{title}{Batteries and fuel cells for emerging electric vehicle
+  markets}
+    \field{volume}{3}
+    \field{journaltitle}{Nature Energy}
+    \field{year}{2018}
+  \endentry
+
+  \entry{complete}{article}{}
+    \name{author}{4}{}{%
+      {{hash=RTCJ}{%
+         family={Romijn},
+         familyi={R\bibinitperiod},
+         given={T.\bibnamedelima Constantijn\bibnamedelima J.},
+         giveni={T\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim
+  J\bibinitperiod},
+      }}%
+      {{hash=DMCF}{%
+         family={Donkers},
+         familyi={D\bibinitperiod},
+         given={M.\bibnamedelima C.\bibnamedelima F.},
+         giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim
+  F\bibinitperiod},
+      }}%
+      {{hash=KJTBA}{%
+         family={Kessels},
+         familyi={K\bibinitperiod},
+         given={John T. B.\bibnamedelima A.},
+         giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod\bibinitdelim
+  B\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=WS}{%
+         family={Weiland},
+         familyi={W\bibinitperiod},
+         given={Siep},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RTCJ+1}
+    \strng{fullhash}{RTCJDMCFKJTBAWS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1109/TCST.2018.2789464
+    \endverb
+    \field{number}{3}
+    \field{pages}{964\bibrangedash 980}
+    \field{title}{A Distributed Optimization Approach for Complete Vehicle
+  Energy Management}
+    \field{volume}{27}
+    \field{journaltitle}{IEEE Transactions on Control Systems Technology}
+    \field{year}{2019}
+  \endentry
+
+  \entry{coast}{article}{}
+    \name{author}{5}{}{%
+      {{hash=BD}{%
+         family={Barta},
+         familyi={B\bibinitperiod},
+         given={Dalibor},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Mruzek},
+         familyi={M\bibinitperiod},
+         given={Martin},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LR}{%
+         family={Labuda},
+         familyi={L\bibinitperiod},
+         given={Robert},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=ST}{%
+         family={Skrucany},
+         familyi={S\bibinitperiod},
+         given={Tomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=GL}{%
+         family={Gardynski},
+         familyi={G\bibinitperiod},
+         given={Leszek},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BD+1}
+    \strng{fullhash}{BDMMLRSTGL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1}
+    \field{title}{Possibility of increasing vehicle energy balance using
+  coasting}
+    \field{volume}{12}
+    \field{journaltitle}{Advances in Science and Technology. Research Journal}
+    \field{year}{2018}
+  \endentry
+
+  \entry{2021v2mec}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=PV}{%
+         family={Passas},
+         familyi={P\bibinitperiod},
+         given={Virgilios},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=MN}{%
+         family={Makris},
+         familyi={M\bibinitperiod},
+         given={Nikos},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=NC}{%
+         family={Nanis},
+         familyi={N\bibinitperiod},
+         given={Christos},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=KT}{%
+         family={Korakis},
+         familyi={K\bibinitperiod},
+         given={Thanasis},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{PV+1}
+    \strng{fullhash}{PVMNNCKT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2021 IEEE Wireless Communications and Networking
+  Conference (WCNC)}
+    \field{pages}{1\bibrangedash 6}
+    \field{title}{V2MEC: Low-Latency MEC for Vehicular Networks in 5G
+  Disaggregated Architectures}
+    \field{year}{2021}
+  \endentry
+
+  \entry{edgeserver}{article}{}
+    \name{author}{4}{}{%
+      {{hash=LCF}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Chen-Feng},
+         giveni={C\bibinithyphendelim F\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Bennis},
+         familyi={B\bibinitperiod},
+         given={Mehdi},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=DM}{%
+         family={Debbah},
+         familyi={D\bibinitperiod},
+         given={Mérouane},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=PHV}{%
+         family={Poor},
+         familyi={P\bibinitperiod},
+         given={H.\bibnamedelima Vincent},
+         giveni={H\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+    }
+    \keyw{5G and beyond, Delays, Edge computing, energy, extreme value theory,
+  fog networking and computing, mobile edge computing (MEC), Optimization,
+  Resource management, Servers, Task analysis, ultra-reliable low latency
+  communications (URLLC)}
+    \strng{namehash}{LCF+1}
+    \strng{fullhash}{LCFBMDMPHV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    To overcome devices' limitations in performing computation-intense
+  applications, mobile edge computing (MEC) enables users to offload tasks to
+  proximal MEC servers for faster task computation. However, the current MEC
+  system design is based on average-based metrics, which fails to account for
+  the ultra-reliable low-latency requirements in mission-critical applications.
+  To tackle this, this paper proposes a new system design, where probabilistic
+  and statistical constraints are imposed on task queue lengths, by applying
+  extreme value theory. The aim is to minimize users' power consumption while
+  trading off the allocated resources for local computation and task
+  offloading. Due to wireless channel dynamics, users are reassociated to MEC
+  servers in order to offload tasks using higher rates or accessing proximal
+  servers. In this regard, a user-server association policy is proposed, taking
+  into account the channel quality as well as the servers' computation
+  capabilities and workloads. By marrying tools from Lyapunov optimization and
+  matching theory, a two-timescale mechanism is proposed, where a user-server
+  association is solved in the long timescale, while a dynamic task offloading
+  and resource allocation policy are executed in the short timescale. The
+  simulation results corroborate the effectiveness of the proposed approach by
+  guaranteeing highly reliable task computation and lower delay performance,
+  compared to several baselines.%
+    }
+    \verb{doi}
+    \verb 10.1109/TCOMM.2019.2898573
+    \endverb
+    \field{issn}{1558-0857}
+    \field{note}{Conference Name: IEEE Transactions on Communications}
+    \field{number}{6}
+    \field{pages}{4132\bibrangedash 4150}
+    \field{title}{Dynamic {Task} {Offloading} and {Resource} {Allocation} for
+  {Ultra}-{Reliable} {Low}-{Latency} {Edge} {Computing}}
+    \field{volume}{67}
+    \verb{file}
+    \verb 2019-Dynamic Task Offloading and Resource Allocation for Ultra-Reliab
+    \verb le Low-Latency.pdf:D\:\\cloud\\PaperNotes\\2019-Dynamic Task Offloadi
+    \verb ng and Resource Allocation for Ultra-Reliable Low-Latency.pdf:applica
+    \verb tion/pdf
+    \endverb
+    \field{journaltitle}{IEEE Transactions on Communications}
+    \field{month}{06}
+    \field{year}{2019}
+  \endentry
+
+  \entry{yu2013toward}{article}{}
+    \name{author}{5}{}{%
+      {{hash=YR}{%
+         family={Yu},
+         familyi={Y\bibinitperiod},
+         given={Rong},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=ZY}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Yan},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=GS}{%
+         family={Gjessing},
+         familyi={G\bibinitperiod},
+         given={Stein},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=XW}{%
+         family={Xia},
+         familyi={X\bibinitperiod},
+         given={Wenlong},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=YK}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Kun},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{YR+1}
+    \strng{fullhash}{YRZYGSXWYK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{5}
+    \field{pages}{48\bibrangedash 55}
+    \field{title}{Toward cloud-based vehicular networks with efficient resource
+  management}
+    \field{volume}{27}
+    \field{journaltitle}{Ieee Network}
+    \field{year}{2013}
+  \endentry
+
+  \entry{liu2020fourtypes}{article}{}
+    \name{author}{6}{}{%
+      {{hash=LC}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Chunhui},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=LK}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Kai},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=GS}{%
+         family={Guo},
+         familyi={G\bibinitperiod},
+         given={Songtao},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=XR}{%
+         family={Xie},
+         familyi={X\bibinitperiod},
+         given={Ruitao},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=LVCS}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Victor C.\bibnamedelima S.},
+         giveni={V\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim
+  S\bibinitperiod},
+      }}%
+      {{hash=SSH}{%
+         family={Son},
+         familyi={S\bibinitperiod},
+         given={Sang\bibnamedelima H.},
+         giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LC+1}
+    \strng{fullhash}{LCLKGSXRLVCSSSH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1109/JIOT.2020.2997720
+    \endverb
+    \field{number}{9}
+    \field{pages}{7999\bibrangedash 8011}
+    \field{title}{Adaptive Offloading for Time-Critical Tasks in Heterogeneous
+  Internet of Vehicles}
+    \field{volume}{7}
+    \field{journaltitle}{IEEE Internet of Things Journal}
+    \field{year}{2020}
+  \endentry
+
+  \entry{efv}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=GR}{%
+         family={Ge},
+         familyi={G\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=FX}{%
+         family={Feng},
+         familyi={F\bibinitperiod},
+         given={Xizhou},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=CK}{%
+         family={Cameron},
+         familyi={C\bibinitperiod},
+         given={K.W.},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GRFXCK1}
+    \strng{fullhash}{GRFXCK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{SC '05: Proceedings of the 2005 ACM/IEEE Conference on
+  Supercomputing}
+    \verb{doi}
+    \verb 10.1109/SC.2005.57
+    \endverb
+    \field{pages}{34\bibrangedash 34}
+    \field{title}{Performance-constrained Distributed DVS Scheduling for
+  Scientific Applications on Power-aware Clusters}
+    \field{year}{2005}
+  \endentry
+
+  \entry{vf}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=EENM}{%
+         family={Elnozahy},
+         familyi={E\bibinitperiod},
+         given={E.\bibnamedelima N.\bibnamedelima (Mootaz)},
+         giveni={E\bibinitperiod\bibinitdelim N\bibinitperiod\bibinitdelim
+  M\bibinitperiod},
+      }}%
+      {{hash=KM}{%
+         family={Kistler},
+         familyi={K\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=RR}{%
+         family={Rajamony},
+         familyi={R\bibinitperiod},
+         given={Ramakrishnan},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \name{editor}{2}{}{%
+      {{hash=FB}{%
+         family={Falsafi},
+         familyi={F\bibinitperiod},
+         given={Babak},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=VTN}{%
+         family={Vijaykumar},
+         familyi={V\bibinitperiod},
+         given={T.\bibnamedelima N.},
+         giveni={T\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer Berlin Heidelberg}%
+    }
+    \strng{namehash}{EENMKMRR1}
+    \strng{fullhash}{EENMKMRR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    This paper evaluates five policies for cluster-wide power management in
+  server farms. The policies employ various combinations of dynamic voltage
+  scaling and node vary-on/vary-off (VOVO) to reduce the aggregate power
+  consumption of a server cluster during periods of reduced workload. We
+  evaluate the policies using a validated simulator that calculates the energy
+  usage and response times of a Web server cluster serving traces culled from
+  real-life Web server workloads.%
+    }
+    \field{booktitle}{Power-Aware Computer Systems}
+    \field{isbn}{978-3-540-36612-6}
+    \field{pages}{179\bibrangedash 197}
+    \field{title}{Energy-Efficient Server Clusters}
+    \list{location}{1}{%
+      {Berlin, Heidelberg}%
+    }
+    \field{year}{2003}
+  \endentry
+
+  \entry{3940}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=LJ}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MJ}{%
+         family={Martinez},
+         familyi={M\bibinitperiod},
+         given={J.F.},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LJMJ1}
+    \strng{fullhash}{LJMJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{The Twelfth International Symposium on High-Performance
+  Computer Architecture, 2006.}
+    \verb{doi}
+    \verb 10.1109/HPCA.2006.1598114
+    \endverb
+    \field{pages}{77\bibrangedash 87}
+    \field{title}{Dynamic power-performance adaptation of parallel computation
+  on chip multiprocessors}
+    \field{year}{2006}
+  \endentry
+
+  \entry{4039}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=PC}{%
+         family={Piguet},
+         familyi={P\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=SC}{%
+         family={Schuster},
+         familyi={S\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=NJL}{%
+         family={Nagel},
+         familyi={N\bibinitperiod},
+         given={J.-L.},
+         giveni={J\bibinithyphendelim L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PCSCNJL1}
+    \strng{fullhash}{PCSCNJL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{The 2nd Annual IEEE Northeast Workshop on Circuits and
+  Systems, 2004. NEWCAS 2004.}
+    \verb{doi}
+    \verb 10.1109/NEWCAS.2004.1359011
+    \endverb
+    \field{pages}{41\bibrangedash 44}
+    \field{title}{Optimizing architecture activity and logic depth for static
+  and dynamic power reduction}
+    \field{year}{2004}
+  \endentry
+
+  \entry{gafirst}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SJR}{%
+         family={Sampson},
+         familyi={S\bibinitperiod},
+         given={Jeffrey\bibnamedelima R.},
+         giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SJR1}
+    \strng{fullhash}{SJR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1137/1018105
+    \endverb
+    \verb{eprint}
+    \verb https://doi.org/10.1137/1018105
+    \endverb
+    \field{number}{3}
+    \field{pages}{529\bibrangedash 530}
+    \field{title}{Adaptation in Natural and Artificial Systems (John H.
+  Holland)}
+    \verb{url}
+    \verb https://doi.org/10.1137/1018105
+    \endverb
+    \field{volume}{18}
+    \field{journaltitle}{SIAM Review}
+    \field{year}{1976}
+  \endentry
+
+  \entry{gapathplan}{article}{}
+    \name{author}{3}{}{%
+      {{hash=RV}{%
+         family={Roberge},
+         familyi={R\bibinitperiod},
+         given={Vincent},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=TM}{%
+         family={Tarbouchi},
+         familyi={T\bibinitperiod},
+         given={Mohammed},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LG}{%
+         family={Labont{\'e}},
+         familyi={L\bibinitperiod},
+         given={Gilles},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{RVTMLG1}
+    \strng{fullhash}{RVTMLG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1}
+    \field{pages}{132\bibrangedash 141}
+    \field{title}{Comparison of parallel genetic algorithm and particle swarm
+  optimization for real-time UAV path planning}
+    \field{volume}{9}
+    \field{journaltitle}{IEEE Transactions on industrial informatics}
+    \field{year}{2012}
+  \endentry
+
+  \entry{GANetwork}{article}{}
+    \name{author}{2}{}{%
+      {{hash=YY}{%
+         family={Yoon},
+         familyi={Y\bibinitperiod},
+         given={Yourim},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=KYH}{%
+         family={Kim},
+         familyi={K\bibinitperiod},
+         given={Yong-Hyuk},
+         giveni={Y\bibinithyphendelim H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{YYKYH1}
+    \strng{fullhash}{YYKYH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1109/TCYB.2013.2250955
+    \endverb
+    \field{number}{5}
+    \field{pages}{1473\bibrangedash 1483}
+    \field{title}{An Efficient Genetic Algorithm for Maximum Coverage
+  Deployment in Wireless Sensor Networks}
+    \field{volume}{43}
+    \field{journaltitle}{IEEE Transactions on Cybernetics}
+    \field{year}{2013}
+  \endentry
+
+  \entry{GAIntrusionDetection}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=KA}{%
+         family={Kannan},
+         familyi={K\bibinitperiod},
+         given={Anand},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MJGQ}{%
+         family={Maguire\bibnamedelima Jr},
+         familyi={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+         given={Gerald\bibnamedelima Q},
+         giveni={G\bibinitperiod\bibinitdelim Q\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Sharma},
+         familyi={S\bibinitperiod},
+         given={Ayush},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SP}{%
+         family={Schoo},
+         familyi={S\bibinitperiod},
+         given={Peter},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{KA+1}
+    \strng{fullhash}{KAMJGQSASP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2012 IEEE 12th International Conference on Data Mining
+  Workshops}
+    \field{pages}{416\bibrangedash 423}
+    \field{title}{Genetic algorithm based feature selection algorithm for
+  effective intrusion detection in cloud networks}
+    \field{year}{2012}
+  \endentry
+
+  \entry{gaguocheng}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SR}{%
+         family={Sivaraj},
+         familyi={S\bibinitperiod},
+         given={R},
+         giveni={R},
+      }}%
+      {{hash=RT}{%
+         family={Ravichandran},
+         familyi={R\bibinitperiod},
+         given={T},
+         giveni={T},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Engg Journals Publications}%
+    }
+    \strng{namehash}{SRRT1}
+    \strng{fullhash}{SRRT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{5}
+    \field{pages}{3792\bibrangedash 3797}
+    \field{title}{A review of selection methods in genetic algorithm}
+    \field{volume}{3}
+    \field{journaltitle}{International journal of engineering science and
+  technology}
+    \field{year}{2011}
+  \endentry
+
+  \entry{a57}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{title}{Cortex-{A57}}
+    \verb{url}
+    \verb https://developer.arm.com/Processors/Cortex-A57
+    \endverb
+    \verb{file}
+    \verb Cortex-A57:D\:\\cloud\\zotero\\storage\\AU836LVQ\\Cortex-A57.html:tex
+    \verb t/html
+    \endverb
+    \field{urlday}{20}
+    \field{urlmonth}{07}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{vecman}{article}{}
+    \name{author}{3}{}{%
+      {{hash=BT}{%
+         family={Bahreini},
+         familyi={B\bibinitperiod},
+         given={Tayebeh},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Brocanelli},
+         familyi={B\bibinitperiod},
+         given={Marco},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=GD}{%
+         family={Grosu},
+         familyi={G\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BTBMGD1}
+    \strng{fullhash}{BTBMGD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1109/TMC.2021.3089338
+    \endverb
+    \field{pages}{1\bibrangedash 1}
+    \field{title}{VECMAN: A Framework for Energy-Aware Resource Management in
+  Vehicular Edge Computing Systems}
+    \field{journaltitle}{IEEE Transactions on Mobile Computing}
+    \field{year}{2021}
+  \endentry
+
+  \entry{2017dsrc}{article}{}
+    \name{author}{5}{}{%
+      {{hash=XZ}{%
+         family={Xu},
+         familyi={X\bibinitperiod},
+         given={Zhigang},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=LX}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Xiaochi},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=ZX}{%
+         family={Zhao},
+         familyi={Z\bibinitperiod},
+         given={Xiangmo},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=ZMH}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Michael\bibnamedelima H},
+         giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=WZ}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Zhongren},
+         giveni={Z\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Hindawi}%
+    }
+    \strng{namehash}{XZ+1}
+    \strng{fullhash}{XZLXZXZMHWZ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{DSRC versus 4G-LTE for connected vehicle applications: A
+  study on field experiments of vehicular communication performance}
+    \field{volume}{2017}
+    \field{journaltitle}{Journal of advanced transportation}
+    \field{year}{2017}
+  \endentry
+\enddatalist
+\endinput

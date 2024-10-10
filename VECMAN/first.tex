@@ -1,0 +1,141 @@
+\documentclass[a4paper]{article}
+
+
+%\documentclass[utf-8]{ctexart} 
+% 导入中文包
+\usepackage{ctex}
+
+
+\begin{document}
+
+
+清洁能源是未来的一个重要趋势, 电能作为清洁能源的代表, 越来越多的人购买汽车选择了电动汽车. 
+
+电动智能汽车是未来城市交通的组成部分, 但是在电池技术发生重大变革前, 电池容量都是电动智能汽车的短板. 
+
+在行驶过程中, 因为要处理的数据量太大, 中央处理器会消耗非常可观的能源, 这就会对行驶里程造成非常大的影响. 如果将所有的数据上传到云端进行处理, 响应时间将会太长, 那么就会无法满足低时延的要求, 并且, 现在的带宽和存储根本无法满足传输所有数据的要求, 
+
+为了解决这个问题, 引入了最近流行的边缘计算技术, 我们不仅可以把任务分配到最近的边缘服务器中, 而且, 还可以分配到用户附近的资源丰富的终端, 
+
+这个卸载过程形成了三层架构, 自动驾驶车辆, 路边单元, 也就是边缘服务器, 以及云端处理器
+
+
+首先将实时的交通信息传输到云端服务器器进行分析, 这些实时的信息包括: 目的地, 当前位置,当前时间, 车速等. 云端服务器汇总数据后, 进行大数据分析, 得出道路拥挤情况, 进而推测出车辆的将来某个时间段的位置信息, 并且返回信息给车辆附近的边缘服务器, 这些信息包括和在时间 T 的范围内, 距离较近的车辆的集合, 这些车辆将会参与资源共享, 
+
+然后, 边缘服务器根据这些信息进行任务分配, 将车辆分为提供者和需求者, 车辆在T时刻内进行资源共享 
+
+
+
+in the first step, 
+We consider a vehicel hosting copmuting resource  
+
+这个问题的输入是参与资源共享的车辆的集合(V), 以及他们位置信息, 
+
+在 t 时刻, 当一辆车 i 被选为提供商($P$), 将 $C_{it}$ 定义为车辆 $i$ 的计算容量, 所有需求者的计算资源要小于车辆的计算容量, 
+\begin{equation}
+	\sum    \limits_{j \in S_{it}}
+	{r'_{jt}} < C_{it}
+	,
+	  i \in P
+\end{equation}
+其中, $r'_{jt} $ 是需求者在 $t$ 时刻需要的计算资源, $S_{it}$ 是提供商在 $t$ 时刻的客户的集合. 
+
+解决该问题的一个关键步骤是如何将计算资源量化, 我们把单位时间内可以执行的指令数作为一辆车的计算资源. 在单位时间执行指令数($M_{it}$)的基础上定义计算容量, 
+\begin{equation}
+	C_{it} = M_{it} - r_{it}
+\end{equation}
+其中, $r_{it}$是车辆$i$ 在$t$ 时刻完成本地任务需求的指令条数, 
+
+对于一个单核心的CPU, 单位时间内执行的指令条数($M_{it}$)和CPU频率($f_{it}$)有如下的关系:
+\begin{equation}
+M_{it} = v_i \cdot f_{it} + \theta_i
+\end{equation}
+其中, $v_{i}$ 和$\theta_i$ 待估计的参数
+
+为了保证需求者和供应商之间的服务质量, 需要满足如下的距离约束:
+\begin{equation}
+	\min\limits_{j \in S_{it} }
+	l_{ij}<\delta
+	,
+	i \in P
+\end{equation}
+其中, $l_{ij}$是车辆 $i$ 和车辆 $j$ 之间的距离
+
+我们在考虑消耗的能量时, 分成两个部分, (1)进行计算所需要的能量, (2)传输或者发送所需要的的能量. 前者在论文中, 能量和频率的三次方呈直线关系即
+\begin{equation}
+	E=\lambda_{i} \cdot f_{it}^{3} 
+\end{equation}
+其中, 因为$f_{it}$ 是车辆 $i$ 在 $t$ 时刻的 CPU 在t时刻的频率.
+当一辆车被选为需求者之后, 因为它的任务被分配出去, 它的频率会下降为 $f^ \prime _{ it}$, 因此车辆所节约的能量为
+\begin{equation}
+		E_{i}^{save}
+		=\lambda_{i} \cdot f_{it}^{3} -
+		\lambda_{i} \cdot{f^{\prime}}_{i}^{3} , 
+		\forall i \in V \backslash P
+\end{equation}
+
+当车辆 $i$ 被选为提供商时,接收任务所需要的能量为
+\begin{equation}
+	E_{i}^{r e c}=\sum_{j \in S_{i}} \omega_{i} \cdot r^{\prime}_{ it}, 
+	\quad \forall i \in P
+\end{equation}
+其中 $\omega_i$ 是 带估计的参数, 
+同样的,需求者传输所需要的能量为
+\begin{equation}
+	E_{i}^{send}=\sum_{j \mid i \in S_{j}} \psi_{i} \cdot r^{\prime}_{ it},
+	 \quad \forall i \in \mathcal{V} \backslash P
+\end{equation}
+定义 $E^{blnc}_{t}$ 为车辆在 $t$ 时刻的能量消耗, 该时刻, $i$ 为提供商时, 该时刻能量消耗为:
+\begin{equation}
+	E^{blnc} _{t}=
+	%E^{ blnc } _{t-1} + 
+	\sum_{j \in S_{i}} \omega_{i} \cdot r^{\prime}_{ it} +
+	\lambda_{i} \cdot f_{it}^{3}
+	, \quad \forall i \in P	
+\end{equation}
+该时刻, 当 $i$ 为需求者时, 总能量消耗为
+\begin{equation}
+	E^{blnc} _{it}=
+	%E^{ blnc } _{it-1} + 
+	\sum_{j \mid i \in S_{j}} \psi_{i} \cdot r^{\prime}_{ it} +
+	\lambda _i \cdot f ^ \prime _{it} ,
+	\quad \forall i \in \mathcal{V} \backslash P
+\end{equation}
+
+目标是
+\begin{equation}
+	\min\sum \limits _{t=1} ^{T} \sum \limits _{i} (E^{blnc}_{it} )^ 2
+\end{equation}
+
+
+
+    以一篇古老的分子动力学文章作为参考\cite{yu2013toward}
+
+	在迭代200次以后, 运行时间和迭代次数呈现线性关系
+
+
+
+\section{}
+
+我们设置了实验的参数, 并且分析了试验的结果
+
+
+
+
+
+
+
+%参考文献
+\bibliographystyle{IEEEtran}
+\bibliography{ref.bib}
+
+\end{document}
+
+
+
+
+\begin{equation}
+	
+\end{equation}
+
+

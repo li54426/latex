@@ -1,0 +1,135 @@
+[1] 余文科, 程媛, 李芳, 等. 物联网技术发展分析与建议[J]. 物联网学报, 2020, 4(4): 105-109.
+
+[2] CANO Z P, BANHAM D, YE S, et al. Batteries and fuel cells for emerging electric vehicle markets[J]. Nature Energy, 2018, 3(4): 279-289.
+
+[3] ROMIJN T C J, DONKERS M C F, KESSELS J T B A, et al. A distributed optimization ap- proach for complete vehicle energy management[J/OL]. IEEE Transactions on Control Systems Technology, 2019, 27(3): 964-980. DOI: 10.1109/TCST.2018.2789464.
+
+[4] BARTA D, MRUZEK M, LABUDA R, et al. Possibility of increasing vehicle energy balance using coasting[J]. Advances in Science and Technology. Research Journal, 2018, 12(1).
+
+[5] 李智勇, 王琦, 陈一凡, 等. 车辆边缘计算环境下任务卸载研究综述[J]. 计算机学报, 2021, 44(5): 963-982.
+
+[6] 施巍松, 张星洲, 王一帆, 等. 边缘计算: 现状与展望[J]. 计算机研究与发展, 2019, 56(1): 69-89.
+
+[7] SHI W, CAO J, ZHANG Q, et al. Edge computing: Vision and challenges[J]. IEEE internet of things journal, 2016, 3(5): 637-646.
+
+[8] KHAN W Z, AHMED E, HAKAK S, et al. Edge computing: A survey[J]. Future Generation Computer Systems, 2019, 97: 219-235.
+
+[9] CAO K, LIU Y, MENG G, et al. An overview on edge computing research[J]. IEEE access, 2020, 8: 85714-85728.
+
+[10] HE Y, SI P B, SUN E C, et al. Joint task management in connected vehicle networks by software- defined networking, computing and caching[C]//2017 International Conference on Network and Information Systems for Computers (ICNISC). IEEE, 2017: 47-50.
+
+[11] GARCIA M H C, MOLINA-GALAN A, BOBAN M, et al. A tutorial on 5g nr v2x communica- tions[J]. IEEE Communications Surveys & Tutorials, 2021, 23(3): 1972-2026.
+
+[12] YU R, ZHANG Y, GJESSING S, et al. Toward cloud-based vehicular networks with efficient resource management[J]. Ieee Network, 2013, 27(5): 48-55.
+
+[13] LIU C, LIU K, GUO S, et al. Adaptive offloading for time-critical tasks in heterogeneous internet of vehicles[J/OL]. IEEE Internet of Things Journal, 2020, 7(9): 7999-8011. DOI: 10.1109/JIOT .2020.2997720.
+
+[14] WANG B, WANG C, HUANG W, et al. A survey and taxonomy on task offloading for edge-cloud computing[J]. IEEE Access, 2020, 8: 186080-186101.
+
+[15] ZHENG K, MENG H, CHATZIMISIOS P, et al. An smdp-based resource allocation in vehicular cloud computing systems[J]. IEEE Transactions on Industrial Electronics, 2015, 62(12): 7920- 7928.
+
+[16] SUN Y, GUO X, SONG J, et al. Adaptive learning-based task offloading for vehicular edge computing systems[J]. IEEE Transactions on vehicular technology, 2019, 68(4): 3061-3074.
+
+[17] SUN Y, GUO X, ZHOU S, et al. Learning-based task offloading for vehicular cloud computing systems[C]//2018 IEEE International Conference on Communications (ICC). IEEE, 2018: 1-7.
+
+[18] KLAIMI J, SENOUCI S M, MESSOUS M A. Theoretical game approach for mobile users re- source management in a vehicular fog computing environment[C]//2018 14th International Wire- less Communications & Mobile Computing Conference (IWCMC). IEEE, 2018: 452-457.
+
+[19] LIN C C, DENG D J, YAO C C. Resource allocation in vehicular cloud computing systems with heterogeneous vehicles and roadside units[J]. IEEE Internet of Things Journal, 2017, 5(5): 3692-3700.
+
+[20] LIU X Y, DING Z, BORST S, et al. Deep reinforcement learning for intelligent transportation systems[A]. 2018.
+
+[21] LIU N, LI Z, XU J, et al. A hierarchical framework of cloud resource allocation and power management using deep reinforcement learning[C]//2017 IEEE 37th international conference on distributed computing systems (ICDCS). IEEE, 2017: 372-382.
+
+[22] ZHANG Y, YAO J, GUAN H. Intelligent cloud resource management with deep reinforcement learning[J]. IEEE Cloud Computing, 2017, 4(6): 60-69.
+
+[23] CHENG M, LI J, NAZARIAN S. Drl-cloud: Deep reinforcement learning-based resource provi- sioning and task scheduling for cloud service providers[C/OL]//2018 23rd Asia and South Pacific Design Automation Conference (ASP-DAC). 2018: 129-134. DOI: 10.1109/ASPDAC.2018.82 97294.
+
+[24] NING Z, DONG P, WANG X, et al. Deep reinforcement learning for vehicular edge computing: An intelligent offloading system[J]. ACM Transactions on Intelligent Systems and Technology (TIST), 2019, 10(6): 1-24.
+
+[25] NING Z, DONG P, WANG X, et al. Deep reinforcement learning for intelligent internet of vehi- cles: An energy-efficient computational offloading scheme[J]. IEEE Transactions on Cognitive Communications and Networking, 2019, 5(4): 1060-1072.
+
+[26] XU X, LIU K, DAI P, et al. Joint task offloading and resource optimization in noma-based vehicular edge computing: A game-theoretic drl approach[J]. Journal of Systems Architecture, 2023, 134: 102780.
+
+[27] HE Q, CUI G, ZHANG X, et al. A game-theoretical approach for user allocation in edge com- puting environment[J]. IEEE Transactions on Parallel and Distributed Systems, 2019, 31(3): 515-529.
+
+[28] CAO H, CAI J. Distributed multiuser computation offloading for cloudlet-based mobile cloud computing: A game-theoretic machine learning approach[J]. IEEE Transactions on Vehicular Technology, 2017, 67(1): 752-764.
+
+[29] GAD A G. Particle swarm optimization algorithm and its applications: a systematic review[J].
+
+Archives of computational methods in engineering, 2022, 29(5): 2531-2561.
+
+[30] 谢云. 模拟退火算法综述[J]. 计算机应用研究, 1998, 15(5): 7-9.
+
+[31] BELOGAEV A, ELOKHIN A, KRASILOV A, et al. Cost-effective v2x task offloading in mec- assisted intelligent transportation systems[J]. IEEE access, 2020, 8: 169010-169023.
+
+[32] CHEN M H, DONG M, LIANG B. Resource sharing of a computing access point for multi-user mobile cloud offloading with delay constraints[J]. IEEE Transactions on Mobile Computing, 2018, 17(12): 2868-2881.
+
+[33] HUYNH L N, PHAM Q V, PHAM X Q, et al. Efficient computation offloading in multi-tier multi- access edge computing systems: A particle swarm optimization approach[J]. Applied Sciences, 2019, 10(1): 203.
+
+[34] BUI K H N, JUNG J J. Aco-based dynamic decision making for connected vehicles in iot system [J]. IEEE Transactions on Industrial Informatics, 2019, 15(10): 5648-5655.
+
+[35] NESTEROV Y. A method for unconstrained convex minimization problem with the rate of con- vergence o (1/k2)[C]//Dokl. Akad. Nauk. SSSR: Vol. 269. 1983: 543.
+
+[36] LITTLE J D, MURTY K G, SWEENEY D W, et al. An algorithm for the traveling salesman problem[J]. Operations research, 1963, 11(6): 972-989.
+
+[37] DANTZIG G B. Maximization of a linear function of variables subject to linear inequalities[J].
+
+Activity analysis of production and allocation, 1951, 13: 339-347.
+
+[38] GOMORY R E. On the relation between integer and noninteger solutions to linear programs[J].
+
+Proceedings of the National Academy of Sciences, 1965, 53(2): 260-265.
+
+[39] SUN Y, XUE B, ZHANG M, et al. Automatically designing cnn architectures using the genetic algorithm for image classification[J]. IEEE transactions on cybernetics, 2020, 50(9): 3840-3854.
+
+[40] ZHANG X, LIU X, LI W, et al. Trade-off between energy consumption and makespan in the mapreduce resource allocation problem[C]//International Conference on Artificial Intelligence and Security. Springer, 2019: 239-250.
+
+[41] YOON Y, KIM Y H. An efficient genetic algorithm for maximum coverage deployment in wire- less sensor networks[J/OL]. IEEE Transactions on Cybernetics, 2013, 43(5): 1473-1483. DOI: 10.1109/TCYB.2013.2250955.
+
+[42] ROBERGE V, TARBOUCHI M, LABONTÉ G. Comparison of parallel genetic algorithm and particle swarm optimization for real-time uav path planning[J]. IEEE Transactions on industrial informatics, 2012, 9(1): 132-141.
+
+[43] AGUSHAKA J O, EZUGWU A E, ABUALIGAH L. Dwarf mongoose optimization algorithm [J]. Computer methods in applied mechanics and engineering, 2022, 391: 114570.
+
+[44] RASA O A E. The dwarf mongoose: a study of behavior and social structure in relation to ecology in a small, social carnivore[M]//Advances in the Study of Behavior: Vol. 17. Elsevier,1987: 121-163.
+
+[45] MOUSTAFA G, SMAILI I H, ALMALAWI D R, et al. Dwarf mongoose optimizer for optimal modeling of solar pv systems and parameter extraction[J]. Electronics, 2023, 12(24): 4990.
+
+[46] AKINOLA O A, AGUSHAKA J O, EZUGWU A E. Binary dwarf mongoose optimizer for solving high-dimensional feature selection problems[J]. Plos one, 2022, 17(10): e0274850.
+
+[47] BALASUBRAMANIAM S, SATHEESH KUMAR K, KAVITHA V, et al. Feature selection and dwarf mongoose optimization enabled deep learning for heart disease detection[J]. Compu- tational intelligence and neuroscience, 2022, 2022.
+
+[48] ALRAYES F S, ALZAHRANI J S, ALISSA K A, et al. Dwarf mongoose optimization-based secure clustering with routing technique in internet of drones[J/OL]. Drones, 2022, 6(9). https: //www.mdpi.com/2504-446X/6/9/247. DOI: 10.3390/drones6090247.
+
+[49] RASA O A E. The ethology and sociology of the dwarf mongoose (helogale undulata rufula)[J].
+
+Zeitschrift für Tierpsychologie, 1977, 43(4): 337-406.
+
+[50] RASA O. Ecological factors and their relationship to group size, mortality and behaviour in the dwarf mongoose helogale undulata (peters, 1852)[J]. Cimbebasia, 1986, 8(3): 15-21.
+
+[51] GE R, FENG X, CAMERON K. Performance-constrained distributed dvs scheduling for scien- tific applications on power-aware clusters[C/OL]//SC ’05: Proceedings of the 2005 ACM/IEEE Conference on Supercomputing. 2005: 34-34. DOI: 10.1109/SC.2005.57.
+
+[52] ELNOZAHY E N M, KISTLER M, RAJAMONY R. Energy-efficient server clusters[C]// FALSAFI B, VIJAYKUMAR T N.
+
+Power-Aware Computer Systems.Berlin, Heidelberg: Springer Berlin Heidelberg, 2003: 179-197.
+
+[53] LI J, MARTINEZ J. Dynamic power-performance adaptation of parallel computation on chip multiprocessors[C/OL]//The Twelfth International Symposium on High-Performance Computer Architecture, 2006. 2006: 77-87. DOI: 10.1109/HPCA.2006.1598114.
+
+[54] PIGUET C, SCHUSTER C, NAGEL J L. Optimizing architecture activity and logic depth for static and dynamic power reduction[C/OL]//The 2nd Annual IEEE Northeast Workshop on Cir- cuits and Systems, 2004. NEWCAS 2004. 2004: 41-44. DOI:10.1109/NEWCAS.2004.1359011.
+
+[55] LIU X, LI W, XIE R. A primal-dual approximation algorithm for the k-prize-collecting minimum power cover problem[J]. Optimization Letters, 2021: 1-13.
+
+[56] LIU X, LI W, DAI H. Approximation algorithms for the minimum power cover problem with submodular/linear penalties[J]. Theoretical Computer Science, 2022.
+
+[57] DAI H, DENG B, LI W, et al. A note on the minimum power partial cover problem on the plane [J]. Journal of Combinatorial Optimization, 2022, 44(2): 970-978.
+
+[58] BAHREINI T, BROCANELLI M, GROSU D. Vecman: A framework for energy-aware resource management in vehicular edge computing systems[J/OL]. IEEE Transactions on Mobile Com- puting, 2021: 1-1. DOI: 10.1109/TMC.2021.3089338.
+
+[59] URSEM R K. Diversity-guided evolutionary algorithms[C]//International Conference on Parallel Problem Solving from Nature. Springer, 2002: 462-471.
+
+[60] MORRISON R W, DE JONG K A. Measurement of population diversity[C]//International con- ference on artificial evolution (evolution artificielle). Springer, 2001: 31-41.
+
+[61] GOUVEA M M, ARAUJO A F. Diversity control based on population heterozygosity dynamics [C]//2008 IEEE Congress on Evolutionary Computation (IEEE World Congress on Computa- tional Intelligence). IEEE, 2008: 3671-3678.
+
+[62] COLLINS R J, JEFFERSON D R. Selection in massively parallel genetic algorithms[M]. Uni- versity of California (Los Angeles). Computer Science Department, 1991.
+
+​

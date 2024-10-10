@@ -1,0 +1,227 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+%\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+
+%自定义宏包
+\usepackage{graphicx}
+\usepackage{amsmath,amsthm}
+\usepackage{amssymb,amsfonts}
+
+
+\usepackage{float} %指定图片位置
+\usepackage{subfigure}%并排子图 共享标题 有子标题
+\usepackage{caption}
+
+\usepackage{hyperref}
+
+%算法宏包
+\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+%\usepackage{setspace}
+
+%导入文献
+\usepackage[backend=bibtex,sorting=none]{biblatex}
+\addbibresource{ref.bib}
+
+
+
+
+
+
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+
+\begin{document}
+
+
+
+
+
+\section{}
+	\subsection{Computation Model}
+We define resource sharing time as $ \mathcal{T}=\{1, \ldots, T \}$. 
+And the number of vehicles is defined as $N$. 
+%, and denote the set of vehicles task as $\mathcal{N_{t}}=\{1_t, \ldots, N_t\}$ at each time slot $t$. 
+We use a tuple $J_{it} = \{r_ {it}, r'_ {it}, d_{it}\}$ to represent the task of vehicle $i$ at time slot $t$. And $d_{it}$ is the task's data size. 
+
+Tasks can be divided into tasks that can be offloaded and tasks that cannot be offloaded and must be executed locally. 
+At time slot $t$, 
+$r_ {it}$ is task required to complete the local by the vehicle $i$, 
+$r'_ {it}$ is task which can offload to others in the vehicle $i$,and their values are expressed in the number of instructions. 
+
+To facilitate the description of the model, we denote $\mathbf{X}_{t}=\left\{x_{i j}\right\} \in\{0,1\}^{N \times N}$ allocation matrix. If $x_{ij}=1$, it represents that vehicle $i$ performs the task of offloading vehicle $j$. Note that if $x_{ii}=1$, all tasks of vehicle $i$ are executed locally. 
+%每一行代表做谁的任务, 每一列代表任务都给谁
+%, and $\mathbf{X}_{t}=
+%\left[\mathbf{x}_{1t}, \mathbf{x}_{2t}, \ldots, \mathbf{x}_{3t}, \ldots, \mathbf{x}_{Nt}\right]$, where $\mathbf{x}_{k}=\left[x_{1 k}, x_{2 k}, \ldots, x_{N k}\right]^{T}$. 
+
+We characterize the computing capacity of vehicle $i$ by $C_ {it}$ at time $t$. When a vehicle is selected as a provider ($P$) at time $t$, the computing resources of all requester should be less than its computing capacity. 
+\begin{equation}
+	\sum    \limits_{ j= 1} ^{N}
+	{ x_{ij}^{t} \cdot  r'_{jt}} \le C_{it}, i = 1, \dots, N
+	%,i \in P
+\end{equation}
+%where $r'_ {jt} $is the computing resource that the requester needs at time slot $t$. %, $s_ {it}$ is the set of customers of the provider at time slot $t$. 
+%For the convenience of description, the vector form is defined as $C_t = (C_{1t}, \dots ,C_{Nt})^T$, $R'_t =(r'_{1t}, \ldots , r'_{Nt})^T $. 
+
+A crucial step is how to quantify the computing resource. 
+%We regard the number of instructions that can be executed per unit time as the computing resources of a vehicle. 
+The computing capacity is defined based on the number of instructions executed per unit time (MIPS, $M_{it}$). 
+\begin{equation}
+	C_{it} = M_{it}   \cdot \Delta T 
+	- r_{it}
+	\label{cm}
+\end{equation}
+where $\Delta T$ is the duration of resource sharing, and is a smaller time scale than time of establishing vehicular network. After $\Delta T$ seconds, the offloading matrix changes. 
+%
+
+For a single core CPU, the number of instructions executed per unit time ($m_{it}$) and CPU frequency ($f_{it}$) have the following relationship:
+\begin{equation}
+	M_{it} = v_i \cdot f_{it} + \theta_i
+	\label{mf}
+\end{equation}
+Where $v_ {i} $ and $\theta_ i$ are parameters to be estimated. 
+
+As a result, the CPU capacity $C_{it}$ in Equation (\ref{cm}) can be calculated following:
+\begin{equation}
+	C_{it} = (v_i \cdot f_{it} + \theta_i)   \times \Delta T 
+	- r_{it}
+	\label{cf}
+\end{equation}
+%To facilitate the description of the model, we denote $R'_t =(r'_{1t}, \ldots , r'_{Nt})^T $ 
+
+%传输能耗
+\subsection{Energy Consumption Model}
+When we consider the energy consumption, we divide it into two parts: (1)the energy required for calculation, (2)the energy required for transmission. 
+%In this paper\cite{dysta}, the energy consumption of processor contain dynamic energy consumption $E ^{dynamic}$ and static energy consumption $E^{static}$. 
+
+According to \cite{efv}, \cite{vf}%\cite{3940}\cite{4039}
+, the energy consumption is computed as follows:
+\begin{equation}
+	E=\lambda_{i} \cdot f_{it}^{3} \cdot \Delta T
+	\label{ef}
+\end{equation}
+where $f_ {it}$ is the frequency of the CPU in vehicle $i$ at time slot $t$. If a vehicle is selected as the requester(R), its frequency will decrease to $f^ \prime _ {it}$. Because its tasks are assigned, so the energy saved  is:
+\begin{equation}
+	E_{i}^{save}
+	=( \lambda_{i} \cdot f_{it}^{3} -
+	\lambda_{i} \cdot{f^{\prime}}_{i}^{3} ) \times \Delta T
+	, 
+	\forall i \in R
+\end{equation}
+%传输能耗
+
+The transmission energy consumption is linear with the transmission time which depends on the ratio between the data size and the data transmission rate($b_{ij}$). 
+\begin{equation}
+	E = P_0 \cdot \frac{d_{it}}{b_{ij}}
+\end{equation} 
+where $P_0$ is the transmission power, although the power can vary~\cite{liu2021primal},~\cite{liu2022approximation},~\cite{dai2022note}, for simplicity, we use a fixed value in this article. 
+
+Maximum data transmission rate($b$) is given by Shannon theorem. 
+\begin{equation}
+	b_{ij} = W\log (1 + \text{SNR})
+\end{equation}
+where SNR is Signal-to-noise Ratio, and $W$ is the channel bandwidth. Because they are related to each actual channel, we regard it as a constant in this paper. 
+
+%每一行代表做谁的任务, 每一列代表任务都给谁
+For each vehicle, the energy required for receiving information is:
+\begin{equation}
+	E_{i}^{r e c}=\sum_{j =1, j \ne i}^{N} x _{ij}^{t} \cdot P_0 \cdot \frac{d_{jt}}{W\log (1 + \text{SNR})}, 
+	\quad  i = 1, \dots ,N
+\end{equation}
+
+%When the vehicle $i$ is selected as the provider, the energy required to receive the task is 
+%Where $\omega_i$ is a parameter with estimation,Similarly, the energy required by the requester for transmission is
+For each vehicle, the energy required for sending information is:
+\begin{equation}
+	E_{i}^{send}=\sum_{i =1, i \ne j}^{N} x _{ij}^{t} \cdot P_0 \cdot \frac{d_{it}}{W\log (1 + SNR)},
+	\quad  j = 1, \dots ,N
+\end{equation}    
+%定义 $E^{blnc}_{t}$ 为车辆在 $t$ 时刻的能量消耗, 该时刻, $i$ 为提供商时, 该时刻能量消耗为:
+
+Define $E^{blnc}_ {t} $ is all the energy consumption of the vehicle in the time slot $t$. 
+%The provider's energy consumption at this time is:
+\begin{equation}
+	\begin{aligned}
+		%身为P 需要  接收
+		E^{blnc} _{it}=
+		%E^{ blnc } _{t-1} + 
+		&\sum_{j=1, j \ne i}^{N} x _{ij}^{t} \cdot P_0 \cdot \frac{d_{jt}}{W\log (1 + \text{SNR})}   \\
+		%E_{i}^{r e c}  
+		+ &\sum_{j=1, , j \ne i}^{N} x _{ji}^{t} \cdot P_0 \cdot \frac{d_{it}}{W\log (1 + \text{SNR})}   \\
+		+ &  \lambda_{i} \cdot f_{it}^{3} \cdot \Delta T
+		, \quad i = 1, \dots ,N	
+	\end{aligned}
+\end{equation}
+%In addition, when vehicle $i$ is the requester at this time $t$, , the total energy consumption is:
+% \begin{equation}
+	% send 
+	%E^{blnc} _{it}=
+	%\sum_{i=1}^{N} x _{ij} \cdot P_0 \cdot \frac{d_{jt}}{W\log (1 + SNR)} +
+	%\lambda _i \cdot f '^ {3} _{it}\cdot \Delta T ,
+	%\quad 
+	%\forall i \in \mathcal{V} \backslash P
+	%j = 1, \dots ,N
+	% \end{equation}
+
+The objective of our algorithm is to minimize the quadratic power of energy over all vehicles. The goal is to balance and minimize energy consumption, because the square of the minimum drawing energy consumption. 
+\begin{equation}
+	\min\sum \limits _{t=1} ^{T} \sum \limits _{i=1}^{N} (E^{blnc}_{it} )^ 2
+\end{equation}
+%Define it as vector form  
+%and $F_t = (f_{1t}, \dots ,f_{Nt})^T$. 
+
+The problem can be formulated as:  
+\begin{align}  		
+	\min  \quad  &\sum \limits _{t=1} ^{T} \sum \limits _{i=1}^{N} (E^{blnc}_{it} )^ 2  \\
+	\text{s. t. }   \quad   & 	    	E^{blnc} _{it}=
+	%E^{ blnc } _{t-1} + 
+	\sum \limits_{j=1,  j \ne i}^{N} x _{ij}^{t} \cdot P_0 \cdot \frac{d_{jt}}{W\log (1 + \text{SNR})}  \notag \\
+	%E_{i}^{r e c}  
+	&\quad \quad +\sum_{j=1 ,j \ne i }^{N} x _{ji}^{t} \cdot P_0 \cdot \frac{d_{it}}{W\log (1 + \text{SNR})}  \notag \\
+	&\quad  \quad + \lambda_{i} \cdot f_{it}^{3} \cdot \Delta T
+	,\quad i = 1, \dots ,N      \\
+	%&\sum    \limits_{j \in S_{it}}
+	%{r'_{jt}} <= C_{it}
+	%,   i \in P   	       \\
+	%& \mathbf{X}_{t} R'_{t} \le C  \\
+	%&C_{it} = (v_i \cdot f'_{it} + \theta_i)   \times \Delta T 
+	%- r_{it}    \\
+	%& \Vert \mathbf{X}_{t} F_t \Vert_1  +\phi ^ T  \\
+	%& C_{it} \ge 0           \\ 
+	& \sum    _{ j= 1} ^{N}
+	{ x_{ij}^{t} \cdot  r'_{jt}} \le C_{it}       \label{cons1}   \\
+	& \sum  _{ i= 1} ^N x_{ij}^{t} 	\ge 1  \label{cons2} \\
+	&     	f_{it} \ge 0         \label{cons3}\\
+	&      x_{it}^{t} \in \{0,1\}	  \label{cons4}
+\end{align} 
+
+As mentioned above, the Equation(\ref{cons1}) shows all the amount of requested cannot exceed available capacity of vehicle $i$. 
+The Equation(\ref{cons2}) shows that the task of vehicle $i$ which can be offloaded must be executed whether by the vehicle $i$ or others. $f$ is the frequency and must be positive number. 
+
+\subsection{Example}
+\begin{equation*}
+	\mathbf{X} = 
+	\begin{bmatrix}		
+		1  &  0  &  0   &0  &  0 \\
+		0  &  1  &  0  &  0 &   0\\
+		0  &  0  &  1 &   0  &  1\\
+		0  &  0 &  0   & 1   & 0 \\
+		0  &  0 &   0   & 0 &   0\\
+	\end{bmatrix}
+\end{equation*}
+
+The $\mathbf{X}$ is a example of allocation matrix. Vehicular set is \{A,B,C,D,E\}, the vehicle A, B and D don't assign and load other vehicular tasks, Therefore, they do not generate transmission energy consumption. And vehicle C execute the offloading task from vehicle E. And the sum of each column is greater than or equal to one. 
+
+
+\printbibliography
+
+
+
+\end{document}

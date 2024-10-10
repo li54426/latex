@@ -1,0 +1,67 @@
+\ProvidesPackage{myPackages}
+%使用\usepackage{packageName}命令导入用到的packages
+
+\everymath{\displaystyle}%使行内公式用行间公式的格式排版
+\numberwithin{equation}{section}%公式按section编号
+\numberwithin{table}{section}%表按section编号
+\numberwithin{figure}{section}%图按section编号
+\usepackage{multicol}%表格中的多栏条目
+\usepackage{pdflscape}%横排页面
+\usepackage{float}%浮动体控制
+\usepackage[section]{placeins}%为了避免浮动对象（图形和表格等）被排版到下一节中
+\usepackage{booktabs}%画三线表
+\usepackage[ruled,linesnumbered]{algorithm2e}%算法
+\usepackage{threeparttable}%给表格里的内容添加注释(表的注释)
+\usepackage{longtable}%实现跨页表格
+
+%Code listing, https://cn.overleaf.com/learn/latex/Code_listing
+\definecolor{codegreen}{RGB}{0, 127, 0}
+\definecolor{codegray}{RGB}{102, 102, 102}
+\definecolor{codepurple}{RGB}{170, 33, 255}
+\definecolor{backcolour}{RGB}{247, 247, 247}
+\definecolor{codered}{RGB}{186, 33, 33}
+\definecolor{comments}{RGB}{63, 127, 127}
+
+\lstdefinestyle{codestyle}{
+	basicstyle=\ttfamily\footnotesize,
+	backgroundcolor=\color{backcolour},
+	commentstyle=\color{comments},
+	keywordstyle=\color{codegreen}\bfseries,
+	numberstyle=\tiny\color{codegray},
+	identifierstyle=,
+	stringstyle=\color{codered},
+	breakatwhitespace=false,
+	breaklines=true,
+	captionpos=b,
+	keepspaces=true,
+	numbers=left, %tiny numbers
+	numbersep=6pt, %6pt distance to the listing
+	%numberstyle=\tiny, %tiny numbers
+	%stepnumber=2, %each second line
+	showspaces=false,
+	showstringspaces=false,
+	showtabs=false,
+	tabsize=2,
+	extendedchars=false,
+	frame=single,
+	frameround=tttt,
+	%允许的空行数,大于1的空行将被省略,但行号仍被计算
+	emptylines=*1,
+	numberblanklines=false,
+}
+%\lstset{style=codestyle}%全局仅需使用一次即可
+
+
+%其他定义
+\newcommand{\dif}{\,\mathrm{d}}
+
+%引入hyperref
+\AtEndOfPackage{
+	\hypersetup{
+		colorlinks=true,
+		linkcolor=black,%[rgb]{.23 .27 .29},
+		filecolor=black,%[rgb]{.23 .27 .29},
+		urlcolor=black,%[rgb]{.23 .27 .29}, 
+		citecolor=black,%[rgb]{.23 .27 .29},
+	}
+}

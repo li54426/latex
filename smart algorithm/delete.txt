@@ -1,0 +1,47 @@
+\begin{algorithm}[t]
+%设置算法编号
+%\renewcommand{\thealgocf}{3-1}
+\SetAlgoLined %显示end
+\caption{Dwarf Mongoose Optimization Algorithm}%算法名字
+\label{}% 标签
+\KwIn{Parameters $ n$}%输入参数
+\KwOut{Best solution}%输出
+	%-----------------begin here----------------
+	%      '\;'   用于换行
+	Initialize the algorithm parameters:[peep] \\
+	Initialize the mongoose populations (search agents): $n$  \\
+	Initialize the number of babysitters: $bs$  \\
+	Set $n=n-bs$  \\
+	Set babysitter exchange parameter $L$
+	
+	\For{iter = 1 : m }{
+		Calculate the fitness of the mongoose \\
+		Set time counter $C$ \\
+		Find the alpha based on the equation:
+			$\alpha=\frac{f i t_i}{\sum_{i=1}^n f i t_i}$ \\
+		Produce a candidate food position based on the equation: 
+			$$\boldsymbol{X}_{i+\mathbf{1}}=X_i+p h i * \text { peep }$$ \\
+		Evaluate new fitness of $\boldsymbol{X}_{i+\mathbf{1}}$  \\
+		Evaluate sleeping mound
+			$$s m_i=\frac{f i t_{i+1}-f i t_i}{\max \left\{\left|f i t_{i+1}, f i t_i\right|\right\}}$$    \\
+		Compute the average value of the sleeping mound found:
+			$$\varphi=\frac{\sum_{i=1}^n s m_i}{n}$$ \\
+		Compute the movement vector using 
+			$$\overrightarrow{\boldsymbol{M}}=\sum_{i=1}^n \frac{X_i \times s m_i}{X_i}$$  \\
+		Exchange babysitters if $C \geq L$, and set initialize bs position and calculate fitness 
+		$f i t_i \leq \alpha$ \\
+		Simulate the scout mongoose next position using
+		\begin{equation*}
+			X_{i+1}=
+			\begin{cases}
+				X_i-C F * \text { phi } * \text { rand }
+					*\left[X_i-\overrightarrow{\boldsymbol{M}}\right], \\
+				\quad\quad\quad\quad\quad\quad\quad\quad \text { if } \varphi_{i+1}>\varphi_i \\
+				X_i+C F * \text { phi } * \text { rand* 		
+					}\left[X_i-\overrightarrow{\boldsymbol{M}}\right], \\
+				\quad\quad\quad\quad\quad\quad\quad\quad \text { else }
+			\end{cases}
+		\end{equation*}
+	}%for
+	return best solution
+\end{algorithm} 
